@@ -39,8 +39,12 @@ a:hover {
   vertical-align: middle;
   height: 100vh;
   flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1em;
 }
-
 .btn-back {
   border-radius: 100px;
   padding: 0.25rem 1rem;
@@ -83,7 +87,8 @@ a:hover {
   align-items: center;
 }
 /* boxes */
-.boxes-grid {
+.boxes-grid,
+.keys-grid {
   display: flex;
   gap: 1.3rem;
   flex-direction: row;
@@ -97,7 +102,8 @@ a:hover {
 #box-1,
 #box-2,
 #box-3,
-#box-4 {
+#box-4,
+.color-box {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -123,27 +129,9 @@ a:hover {
 #box-4 {
   background-color: yellow;
 }
-/* buttons + alerts */
-.btn-dark {
-  border-radius: 100px;
-  padding: 0.5rem 1.5rem;
-  background-color: rgb(45, 118, 235);
-  border: none;
-  font-size: 1.2rem;
-}
-.btn-dark:hover {
-  background-color: #75c9bc;
-  font-weight: 500;
-}
-.alerta-too-many {
-  color: red;
-  margin-top: 2rem;
-  font-size: 1.2rem;
-}
-.alerta-ok {
-  color: green;
-  margin-top: 2rem;
-  font-size: 1.2rem;
+.color-box {
+  background-color: white;
+  border: solid 2px black;
 }
 
 /* Medium devices (tablets, 768px and up) */
